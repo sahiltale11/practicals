@@ -98,7 +98,7 @@ class Clothing extends Product implements Discountable {
 }
 
 // Main class to test the implementation
-public class Main {
+public class Discountable1 {
     public static void main(String[] args) {
         // Create instances of each product
         Product product1 = new Electronics("Laptop", 1000.0, 10.0);

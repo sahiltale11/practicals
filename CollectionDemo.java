@@ -43,7 +43,7 @@ public class CollectionDemo {
         System.out.println("\nStudent Marks: " + studentMarks);
         studentMarks.remove("Bob");
         System.out.println("After removing 'Bob': " + studentMarks);
-        System.out.println("Marks for 'Alice': " + studentMarks.getOrDefaul("Alice", -1));
+        System.out.println("Marks for 'Alice': " + studentMarks.getOrDefault("Alice", -1));
 
         System.out.println("Iterating through HashMap:");
         for (Map.Entry<String, Integer> entry : studentMarks.entrySet()) {

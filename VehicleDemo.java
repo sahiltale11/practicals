@@ -1,34 +1,35 @@
-abstract class Vehicle {
-    public abstract void startEngine();
-    public abstract void stopEngine();
-    public abstract void accelerate();
+abstract class Vehicle {                                                      // Abstract class Vehicle
+
+    abstract void startEngine();
+    abstract void stopEngine();
+    abstract void accelerate();
 }
 
-interface GPSVehicle {
+interface GPSVehicle {            // GPSVehicle Interface
     void enableGPS();
     void disableGPS();
 }
 
+
 class Car extends Vehicle implements GPSVehicle {
-
     @Override
-    public void startEngine() {
-        System.out.println("Car engine started");
+    void startEngine() {
+        System.out.println("Car engine started.");
     }
 
     @Override
-    public void stopEngine() {
-        System.out.println("Car engine stopped");
+    void stopEngine() {
+        System.out.println("Car engine stopped.");
     }
 
     @Override
-    public void accelerate() {
-        System.out.println("Car is accelerating smoothly");
+    void accelerate() {
+        System.out.println("Car is accelerating.");
     }
 
     @Override
     public void enableGPS() {
-        System.out.println("GPS enabled in the car");
+        System.out.println("GPS enabled in the car.");
     }
 
     @Override
@@ -37,36 +38,36 @@ class Car extends Vehicle implements GPSVehicle {
     }
 }
 
+
 class Bike extends Vehicle {
-
     @Override
-    public void startEngine() {
-        System.out.println("Bike engine started");
+    void startEngine() {
+        System.out.println("Bike engine started.");
     }
 
     @Override
-    public void stopEngine() {
-        System.out.println("Bike engine stopped");
+    void stopEngine() {
+        System.out.println("Bike engine stopped.");
     }
 
     @Override
-    public void accelerate() {
-        System.out.println("Bike is accelerating ");
+    void accelerate() {
+        System.out.println("Bike is accelerating.");
     }
 }
 
+
 public class VehicleDemo {
     public static void main(String[] args) {
-        
-        Vehicle myCar = new Car();
-
+        Car myCar = new Car();
         myCar.startEngine();
         myCar.accelerate();
+        myCar.enableGPS();
         myCar.stopEngine();
 
         System.out.println();
 
-        Vehicle myBike = new Bike();
+        Bike myBike = new Bike();
         myBike.startEngine();
         myBike.accelerate();
         myBike.stopEngine();
