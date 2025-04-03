@@ -1,0 +1,27 @@
+Create a java program to demonstrate following exceptions handling using try catch block.
+•  ArithmeticException:
+•	Write a program to divide two numbers entered by the user.
+•	Use a try-catch block to handle the ArithmeticException that might occur if the denominator is zero.
+•	Display an appropriate error message if the exception is caught.
+•  ArrayIndexOutOfBoundsException:
+•	Create an array of integers.
+•	Try to access an element at an invalid index.
+•	Use a try-catch block to handle the ArrayIndexOutOfBoundsException that might occur.
+•	Display an appropriate error message if the exception is caught.
+•  NullPointerException:
+•	Create a string variable and assign it a null value.
+•	Attempt to access a method or property of the null string.
+•	Use a try-catch block to handle the NullPointerException that might occur.
+•	Display an appropriate error message if the exception is caught.
+
+
+
+
+
+
+
+
+
+
+
+
